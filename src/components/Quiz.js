@@ -6,7 +6,7 @@ const Quiz= () => {
     const [currentQuestion, setCurrentQuestion] = useState(0)
     const [selectedAnswers, setSelectedAnswers] = useState("")
     const {score,setscore,setAppState} = useContext(DataContext)
-
+// It's have useEffect warning so I need to remove by using line 12
     useEffect(()=>{ 
         checkanswer()
 // eslint-disable-next-line
